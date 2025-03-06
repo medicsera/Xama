@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirstTry.MainPage">
+
+  <!--  <StackLayout>
+        <Label Text="Регистрация" FontSize="25"/>
+        <Entry x:Name="entryname" Placeholder="Введите имя"/>
+        <Entry x:Name="entryemail" Placeholder="Введите почту"/>
+        <Entry x:Name="entrypassword" Placeholder="Введите пароль" IsPassword="True"/>
+
+        <Label Text="Всё верно?"/>
+        <CheckBox x:Name="checkbox" />
+
+        <Button x:Name="buttonsend" Text="Отправить" Clicked="button_click"/>
+        <Label x:Name="errortext" Text="" TextColor="red" FontSize="20" />
+
+    </StackLayout>
+-->
+    <ScrollView>
+       <!-- <StackLayout BackgroundColor ="DarkSeaGreen" Margin="20,10" Padding="5,8">
+            <Label Text="hello"/>
+            <Label Text="world"/>
+            <StackLayout Orientation="Horizontal" BackgroundColor="red">
+                <Label Text="hello"/>
+                <Label Text="world"/>
+            </StackLayout>
+        </StackLayout>
+
+        <AbsoluteLayout>
+            <BoxView BackgroundColor="HotPink" AbsoluteLayout.LayoutBounds="70,50,150,80"/>
+        </AbsoluteLayout>
+        <StackLayout>
+            <Frame BackgroundColor="Blue" BorderColor="Red" CornerRadius = "20">
+                <StackLayout>
+                    <Label Text="Hi!" TextColor="White"/>
+                    <Label Text="world" TextColor="Wheat"/>
+                    <BoxView BackgroundColor="Red" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>  -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions >
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <BoxView BackgroundColor="Aqua" Grid.Column="0" Grid.Row="0"/>
+            <BoxView BackgroundColor="Red" Grid.Column="1" Grid.Row="1"/>
+            <BoxView BackgroundColor="Gray" Grid.Column="2" Grid.Row="2"/>
+        </Grid>
+    </ScrollView>
+</ContentPage>
